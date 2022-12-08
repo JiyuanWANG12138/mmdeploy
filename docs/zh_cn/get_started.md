@@ -254,7 +254,7 @@ import cv2
 img = cv2.imread('mmdetection/demo/demo.jpg')
 
 # 创建检测器
-detector = Detector(model_path='mmdeploy_models/faster-rcnn', device_name='cuda', device_id=0)
+detector = Detector(model_path='mmdeploy_model/faster-rcnn', device_name='cuda', device_id=0)
 # 执行推理
 bboxes, labels, _ = detector(img)
 # 使用阈值过滤推理结果，并绘制到原图中
